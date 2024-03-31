@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		EF13B1912BB9548600D4A961 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EF13B1902BB9548600D4A961 /* Inceptionv3.mlmodel */; };
+		EF17EF732BB9739A00B7C53F /* RealTimeDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF17EF722BB9739A00B7C53F /* RealTimeDetectionViewController.swift */; };
+		EF1BAFF72BB97541005A6379 /* VideoCameraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1BAFF42BB97541005A6379 /* VideoCameraType.swift */; };
+		EF1BAFF82BB97541005A6379 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1BAFF52BB97541005A6379 /* VideoCapture.swift */; };
+		EF1BAFF92BB97541005A6379 /* AVCaptureDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1BAFF62BB97541005A6379 /* AVCaptureDevice+Extension.swift */; };
+		EF1BAFFB2BB98A7C005A6379 /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EF1BAFFA2BB98A7B005A6379 /* MobileNetV2.mlmodel */; };
+		EF1BAFFD2BB98E54005A6379 /* FacialAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1BAFFC2BB98E54005A6379 /* FacialAnalysisViewController.swift */; };
 		EF76D10F2BB7BCC10075EB91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF76D10E2BB7BCC10075EB91 /* AppDelegate.swift */; };
 		EF76D1112BB7BCC10075EB91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF76D1102BB7BCC10075EB91 /* SceneDelegate.swift */; };
 		EF76D1162BB7BCC10075EB91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF76D1142BB7BCC10075EB91 /* Main.storyboard */; };
@@ -21,6 +27,12 @@
 
 /* Begin PBXFileReference section */
 		EF13B1902BB9548600D4A961 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		EF17EF722BB9739A00B7C53F /* RealTimeDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealTimeDetectionViewController.swift; sourceTree = "<group>"; };
+		EF1BAFF42BB97541005A6379 /* VideoCameraType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCameraType.swift; sourceTree = "<group>"; };
+		EF1BAFF52BB97541005A6379 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		EF1BAFF62BB97541005A6379 /* AVCaptureDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extension.swift"; sourceTree = "<group>"; };
+		EF1BAFFA2BB98A7B005A6379 /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		EF1BAFFC2BB98E54005A6379 /* FacialAnalysisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacialAnalysisViewController.swift; sourceTree = "<group>"; };
 		EF76D10B2BB7BCC10075EB91 /* ai 11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ai 11.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF76D10E2BB7BCC10075EB91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF76D1102BB7BCC10075EB91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,9 +60,20 @@
 		EF13B1922BB9549C00D4A961 /* ML Model */ = {
 			isa = PBXGroup;
 			children = (
+				EF1BAFFA2BB98A7B005A6379 /* MobileNetV2.mlmodel */,
 				EF13B1902BB9548600D4A961 /* Inceptionv3.mlmodel */,
 			);
 			path = "ML Model";
+			sourceTree = "<group>";
+		};
+		EF1BAFF32BB97541005A6379 /* VideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				EF1BAFF42BB97541005A6379 /* VideoCameraType.swift */,
+				EF1BAFF52BB97541005A6379 /* VideoCapture.swift */,
+				EF1BAFF62BB97541005A6379 /* AVCaptureDevice+Extension.swift */,
+			);
+			path = VideoCapture;
 			sourceTree = "<group>";
 		};
 		EF76D1022BB7BCC00075EB91 = {
@@ -72,6 +95,7 @@
 		EF76D10D2BB7BCC10075EB91 /* ai 11 */ = {
 			isa = PBXGroup;
 			children = (
+				EF1BAFF32BB97541005A6379 /* VideoCapture */,
 				EF13B1922BB9549C00D4A961 /* ML Model */,
 				EF76D1322BB906900075EB91 /* Model */,
 				EF76D1312BB906840075EB91 /* Custom Views */,
@@ -91,6 +115,8 @@
 			children = (
 				EF76D1282BB8F34D0075EB91 /* MainViewController.swift */,
 				EF76D12E2BB906470075EB91 /* ObjectDetectionViewController.swift */,
+				EF17EF722BB9739A00B7C53F /* RealTimeDetectionViewController.swift */,
+				EF1BAFFC2BB98E54005A6379 /* FacialAnalysisViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -184,9 +210,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF76D1292BB8F34D0075EB91 /* MainViewController.swift in Sources */,
+				EF17EF732BB9739A00B7C53F /* RealTimeDetectionViewController.swift in Sources */,
 				EF76D12B2BB8FCDD0075EB91 /* MainFeatureCell.swift in Sources */,
 				EF76D10F2BB7BCC10075EB91 /* AppDelegate.swift in Sources */,
+				EF1BAFF92BB97541005A6379 /* AVCaptureDevice+Extension.swift in Sources */,
 				EF76D12F2BB906470075EB91 /* ObjectDetectionViewController.swift in Sources */,
+				EF1BAFFB2BB98A7C005A6379 /* MobileNetV2.mlmodel in Sources */,
+				EF1BAFF72BB97541005A6379 /* VideoCameraType.swift in Sources */,
+				EF1BAFF82BB97541005A6379 /* VideoCapture.swift in Sources */,
+				EF1BAFFD2BB98E54005A6379 /* FacialAnalysisViewController.swift in Sources */,
 				EF76D12D2BB8FF430075EB91 /* SampleData.swift in Sources */,
 				EF76D1112BB7BCC10075EB91 /* SceneDelegate.swift in Sources */,
 				EF13B1912BB9548600D4A961 /* Inceptionv3.mlmodel in Sources */,
