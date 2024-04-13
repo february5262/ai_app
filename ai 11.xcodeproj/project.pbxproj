@@ -23,6 +23,9 @@
 		EF76D12B2BB8FCDD0075EB91 /* MainFeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF76D12A2BB8FCDD0075EB91 /* MainFeatureCell.swift */; };
 		EF76D12D2BB8FF430075EB91 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF76D12C2BB8FF430075EB91 /* SampleData.swift */; };
 		EF76D12F2BB906470075EB91 /* ObjectDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF76D12E2BB906470075EB91 /* ObjectDetectionViewController.swift */; };
+		EFD26AD52BC51EF1008969D0 /* GenderNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EFD26AD22BC51ECE008969D0 /* GenderNet.mlmodel */; };
+		EFD26AD62BC51EF1008969D0 /* AgeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EFD26AD32BC51ED2008969D0 /* AgeNet.mlmodel */; };
+		EFD26AD72BC51EF1008969D0 /* CNNEmotions.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EFD26AD42BC51EF1008969D0 /* CNNEmotions.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		EF76D12A2BB8FCDD0075EB91 /* MainFeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFeatureCell.swift; sourceTree = "<group>"; };
 		EF76D12C2BB8FF430075EB91 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		EF76D12E2BB906470075EB91 /* ObjectDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionViewController.swift; sourceTree = "<group>"; };
+		EFD26AD22BC51ECE008969D0 /* GenderNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GenderNet.mlmodel; sourceTree = "<group>"; };
+		EFD26AD32BC51ED2008969D0 /* AgeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AgeNet.mlmodel; sourceTree = "<group>"; };
+		EFD26AD42BC51EF1008969D0 /* CNNEmotions.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CNNEmotions.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 		EF13B1922BB9549C00D4A961 /* ML Model */ = {
 			isa = PBXGroup;
 			children = (
+				EFD26AD32BC51ED2008969D0 /* AgeNet.mlmodel */,
+				EFD26AD42BC51EF1008969D0 /* CNNEmotions.mlmodel */,
+				EFD26AD22BC51ECE008969D0 /* GenderNet.mlmodel */,
 				EF1BAFFA2BB98A7B005A6379 /* MobileNetV2.mlmodel */,
 				EF13B1902BB9548600D4A961 /* Inceptionv3.mlmodel */,
 			);
@@ -217,9 +226,12 @@
 				EF76D12F2BB906470075EB91 /* ObjectDetectionViewController.swift in Sources */,
 				EF1BAFFB2BB98A7C005A6379 /* MobileNetV2.mlmodel in Sources */,
 				EF1BAFF72BB97541005A6379 /* VideoCameraType.swift in Sources */,
+				EFD26AD72BC51EF1008969D0 /* CNNEmotions.mlmodel in Sources */,
 				EF1BAFF82BB97541005A6379 /* VideoCapture.swift in Sources */,
 				EF1BAFFD2BB98E54005A6379 /* FacialAnalysisViewController.swift in Sources */,
 				EF76D12D2BB8FF430075EB91 /* SampleData.swift in Sources */,
+				EFD26AD62BC51EF1008969D0 /* AgeNet.mlmodel in Sources */,
+				EFD26AD52BC51EF1008969D0 /* GenderNet.mlmodel in Sources */,
 				EF76D1112BB7BCC10075EB91 /* SceneDelegate.swift in Sources */,
 				EF13B1912BB9548600D4A961 /* Inceptionv3.mlmodel in Sources */,
 			);
